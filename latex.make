@@ -2,7 +2,7 @@ TEXNAME?=main
 all: $(TEXNAME).pdf
 
 view:
-	firefox $(TEXNAME).pdf
+	xdg-open $(TEXNAME).pdf
 
 %.pdf: %.tex
 	lualatex $^
